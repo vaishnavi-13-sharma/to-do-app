@@ -1,0 +1,23 @@
+VIRTUAL ENVIRONMENT (commands for Windows OS, Mac and Linux are different)
+python -m venv venv
+.\venv\Scripts\activate
+
+DEPENDENCIES
+pip install flask
+pip insall flask-sqlalchemy
+pip install Flask-CORS
+
+OR IF USING REQUIREMENTS.TXT
+pip install -r requirements.txt
+
+RUN APPLICATION SERVER
+python app.py
+
+TO CREATE TABLES IN DB
+set FLASK_APP=app.py
+python create_db.py
+
+MAKE TASK IN POSTMAN
+{
+    "title": "submit homework"
+}
